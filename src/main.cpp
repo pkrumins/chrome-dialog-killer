@@ -9,7 +9,7 @@ int main() {
             HWND dialogItem = NULL;
             while (1) {
                 dialogItem = FindWindowEx(dialog, dialogItem, NULL, NULL);
-                if (dialogItem == 0) {
+                if (dialogItem == NULL) {
                     break;
                 }
                 char windowText[255];
